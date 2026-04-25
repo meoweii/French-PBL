@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>French PBL Website</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                 <i class="fa-solid fa-cheese logo-icon"></i>
+                <div class="logo-text">Regional<span>Cuisine</span></div>
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#Alsace">Alsace</a></li>
+                    <li><a href="#Brittany">Brittany</a></li>
+                    <li><a href="#Normandy">Normandy</a></li>
+                    <li><a href="#Provence">Provence</a></li>
+                    <li><a href="#Lyon">Lyon</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-secondary" id="playBtn">Play Music</a>
+                <audio id="myAudio" src="music1city.mp3"></audio>
+
+            <script>
+            const audio = document.getElementById("myAudio");
+            const button = document.getElementById("playBtn");
+
+            button.addEventListener("click", function(e) {
+                e.preventDefault();
+
+                if (audio.paused) {
+                    audio.play();
+                    button.textContent = "Pause Music";
+                } else {
+                    audio.pause();
+                    button.textContent = "Play Music";
+                }
+            });
+            </script>
+                <a href="photos/france1.jpeg" class="btn btn-primary" target="_blank">View Map</a>
+            </div>
+        </div>
+    </header>
+
+   
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-subtitle">
+                    <i class="fas fa-seedling"></i>
+                    French Regional Cuisine
+                </div>
+                <h1 class="hero-title">French PBL <br><span>AN-2</span></h1>
+                <p class="hero-text">Ce projet est présenté par Palak Wahal, Adarsh V Nair, Aarav Chandwaney, Matthew Simion et Deva Darshan de AN-2. Nous espérons que vous apprécierez ce projet et la réflexion qui le sous-tend ; nous espérons vous faire découvrir les merveilles de la cuisine française et ses spécificités régionales à travers celui-ci ! </p>
+                <div class="hero-buttons">
+                    <a href="#footer" class="btn btn-primary">Group Information</a>
+                    <a href="#Introduction" class="btn btn-secondary">Introduction</a>
+                </div>
+            </div>
+            <img src="photos/french food v.webp" alt="" width="370px">
+        </div>
+    </section>
+       
+    <!-- Products Section -->
+    <section class="Introduction" id="Introduction">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Pourquoi avons-nous choisi ce sujet ?</div>
+                <h2 class="section-title">Introduction</h2>
+                <p class="section-desc">La France est reconnue dans le monde entier pour son riche patrimoine culinaire, mais ce qui rend la cuisine française vraiment unique, c’est son lien profond avec la diversité régionale. Des pâtisseries beurrées et des fruits de mer frais de la Normandie aux plats riches et mijotés de la Bourgogne, en passant par les saveurs méditerranéennes vibrantes de la Provence, chaque région de la France offre sa propre culture alimentaire distincte, façonnée par la géographie, le climat, l’histoire et les traditions locales. Ces variations créent une mosaïque de goûts et de techniques qui définissent ensemble ce que l’on appelle mondialement la cuisine française. Le concept de culture alimentaire régionale en France va bien au-delà des recettes et des ingrédients — il reflète l’identité, l’histoire et le mode de vie de ses habitants. Chaque région est fière de ses produits locaux, qu’il s’agisse de fromage, de vin, de céréales ou de fruits de mer, et utilise des méthodes de cuisson traditionnelles transmises de génération en génération. L’alimentation saisonnière, les marchés locaux et les traditions familiales jouent tous un rôle essentiel dans la préservation de ces pratiques culinaires. Ainsi, en France, la nourriture n’est pas seulement une question de subsistance, mais aussi de culture, de célébration et de lien social.
+La gastronomie française est également reconnue à l’échelle mondiale pour son importance culturelle. Des institutions telles que UNESCO ont reconnu l’importance des traditions culinaires françaises comme faisant partie du patrimoine culturel immatériel de l’humanité. Cette reconnaissance souligne à quel point la nourriture est profondément ancrée dans la société française, influençant tout, des repas quotidiens aux rassemblements festifs.
+Ce projet vise à fournir un aperçu complet des cultures alimentaires régionales en France en explorant les caractéristiques uniques des différentes régions, leurs plats emblématiques et les facteurs qui influencent leurs identités culinaires. Il examinera comment la géographie et le climat façonnent les ingrédients locaux, comment…
+
+l’histoire et les échanges culturels ont influencé les styles de cuisine, et comment ces traditions continuent d’évoluer à l’époque moderne. À travers cette étude, le projet cherche à démontrer que la cuisine française n’est pas une tradition unique et uniforme, mais plutôt une riche et diverse collection de cultures régionales qui, ensemble, constituent une partie essentielle de l’identité nationale de la France.
+</p>
+            </div>
+            
+            <div class="region-grid">
+                <div class="region-card">
+                    <div class="region-img">
+                        <img src="photos/alsace 1.jpg" alt="Alsace">
+                    </div>
+                    <div class="region-info">
+                        <div class="region-tag">Northeastern France</div>
+                        <h3 class="region-title">Alsace</h3>
+                        <p class="region-desc">La région d'Alsace est connue pour ses plats traditionnels, notamment les flammekuech (tarte aux oignons) et les choucroutes. La cuisine alsacienne mélange les influences allemandes et françaises, créant un style unique.</p>
+                        <div class="region-footer">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="region-card">
+                    <div class="region-img">
+                        <img src="photos/brittany 1.jpeg" alt="Brittany">
+                    </div>
+                    <div class="region-info">
+                        <div class="region-tag">Northwestern France</div>
+                        <h3 class="region-title">Brittany</h3>
+                        <p class="region-desc">La Bretagne est célèbre pour ses spécialités culinaires comme les crêpes, les galettes et les fruits de mer. La cuisine bretonne est influencée par les traditions celtes et normandes.</p>
+                        <div class="region-footer">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="region-card">
+                    <div class="region-img">
+                        <img src="photos/normandy 1.jpeg" alt="Normandy">
+                    </div>
+                    <div class="region-info">
+                        <div class="region-tag">Northwestern France</div>
+                        <h3 class="region-title">Normandy</h3>
+                        <p class="region-desc">La Normandie est connue pour ses produits laitiers, notamment les fromages comme le Camembert et le Brie, ainsi que pour ses cidres et vins. La cuisine normande met en valeur les ingrédients locaux et les traditions culinaires.</p>
+                        <div class="region-footer">
+                        </div>
+                    </div>
+                </div>
+                <div class="region-card">
+                    <div class="region-img">
+                        <img src="photos/provence 1.webp" alt="Provence">
+                    </div>
+                    <div class="region-info">
+                        <div class="region-tag">Southern France</div>
+                        <h3 class="region-title">Provence</h3>
+                        <p class="region-desc">La Provence est célèbre pour ses herbes de Provence, ses olives et ses vins. La cuisine provençale met en valeur les ingrédients frais et les saveurs méditerranéennes.</p>
+                        <div class="region-footer">
+                        </div>
+                    </div>
+                </div>
+                <div class="region-card">
+                    <div class="region-img">
+                        <img src="photos/lyon 1.jpg" alt="Lyon">
+                    </div>
+                    <div class="region-info">
+                        <div class="region-tag">Eastern France</div>
+                        <h3 class="region-title">Lyon</h3>
+                        <p class="region-desc">La ville de Lyon est connue pour sa cuisine raffinée et ses spécialités comme les quenelles et les salades lyonnaises. La cuisine lyonnaise mélange les influences régionales et internationales.</p>
+                        <div class="region-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="regional" id="Alsace">
+        <div class="containerreg">
+            <div class="content-row">
+                <div class="regional-header">
+                    <div class="regional-subtitle">La région germanique de la France</div>
+                    <h2 class="regional-title">Alsace</h2>
+                    <p class="regional-desc"> La culture alimentaire régionale de l’Alsace
+                        L’Alsace, située dans le nord-est de la France, le long de la frontière avec l’Allemagne, possède une culture culinaire distinctive façonnée par une longue histoire d’échanges culturels entre les deux nations. Cette position unique a donné naissance à une cuisine qui combine le raffinement français avec la richesse et la générosité allemandes, rendant la cuisine alsacienne plus consistante, robuste et réconfortante que celle de nombreuses autres régions de France.
+Une caractéristique essentielle de la cuisine alsacienne est son importance accordée à la viande, en particulier le porc, utilisé sous différentes formes telles que les saucisses, les viandes fumées et les jambons. Les techniques traditionnelles de conservation comme le salage et la fermentation sont encore largement pratiquées, reflétant le climat plus froid de la région et le besoin historique de conserver les aliments pendant de longues périodes. L’un des plats les plus emblématiques qui illustre cette tradition est la choucroute, une préparation savoureuse de chou fermenté accompagnée de différentes viandes, notamment des saucisses.
+En plus de ses plats à base de viande, l’Alsace est également réputée pour sa forte culture du vin. Contrairement aux régions allemandes voisines davantage associées à la bière, l’Alsace est célèbre pour la production de vins blancs de haute qualité tels que le Riesling et le Gewurztraminer. Ces vins font partie intégrante de l’expérience gastronomique et sont souvent soigneusement associés aux plats locaux afin d’en rehausser les saveurs.
+Le fromage occupe également une place importante dans la culture alimentaire de la région, le munster étant l’une des variétés les plus connues. Ce fromage se distingue par son arôme puissant et son goût prononcé, reflétant la tradition régionale de saveurs fortes et distinctives. Par ailleurs, l’Alsace propose des spécialités locales uniques comme la tarte flambée, une fine pâte croustillante garnie de crème, d’oignons et de lardons, illustrant à la fois la simplicité et la richesse des ingrédients régionaux.
+Dans l’ensemble, la culture culinaire de l’Alsace se distingue par la fusion de ses influences, son utilisation d’ingrédients conservés et consistants, ainsi que son profond attachement aux traditions locales. Elle constitue un exemple clair de la manière dont la géographie et l’histoire peuvent influencer non seulement ce que les gens mangent, mais aussi la façon dont ils cuisinent et partagent leurs repas.
+
+                    </p>
+                </div>
+                <div class="polaroid-gallery">
+                    <div class="pin"><img src="photos/alsace3.png"></div>
+                    <div class="pin"><img src="photos/alsace2.jpg"></div>
+                    <div class="pin"><img src="photos/alsace4.png"></div>
+                    <div class="pin"><img src="photos/alsace5.png"></div>
+                    <div class="pin"><img src="photos/alsace6.png"></div>
+                    <div class="pin"><img src="photos/alsace7.png"></div>
+                    <div class="pin"><img src="photos/alsace8.png"></div>
+                    <div class="pin"><img src="photos/alsace9.png"></div>
+                    <div class="pin"><img src="photos/alsace10.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="interval">
+            <div class="containerreg">
+                <div class="interval-content" style="display:flex; gap:40px; align-items:center;">
+                    <div style="flex:1;">
+                    <h2 class="interval-title">Le caractère unique de l'Alsace</h2>
+                    <p class="interval-desc"> <b>• Mélange d’influences françaises et allemandes</b><br>
+La cuisine alsacienne est unique car elle combine des éléments des traditions culinaires françaises et allemandes. Un exemple classique est la choucroute, qui reflète fortement l’influence de la cuisine allemande.<br>
+
+<b>• Forte tradition de production de vins blancs</b><br>
+Contrairement à de nombreuses régions ayant une cuisine similaire, l’Alsace est particulièrement célèbre pour ses vins blancs, tels que le Riesling et le Gewurztraminer. Le vin n’est pas seulement une boisson importante, mais aussi un élément essentiel des repas et des traditions culturelles de la région.
+</p>
+                    </div>
+                
+    </section>
+    
+        
+    <section class="regional1" id="Brittany">
+        <div class="containerreg">
+            <div class="content-row">
+                <div class="polaroid-gallery">
+                    <div class="pin"><img src="photos/brittany2.png"></div>
+                    <div class="pin"><img src="photos/brittany3.png"></div>
+                    <div class="pin"><img src="photos/brittany4.png"></div>
+                    <div class="pin"><img src="photos/brittany5.png"></div>
+                    <div class="pin"><img src="photos/brittany6.png"></div>
+                    <div class="pin"><img src="photos/brittany7.png"></div>
+                    <div class="pin"><img src="photos/brittany8.png"></div>
+                    <div class="pin"><img src="photos/brittany9.png"></div>
+                    <div class="pin"><img src="photos/brittany10.png"></div>
+                </div>
+                <div class="regional-header">
+                    <div class="regional-subtitle">La région bretonne de la France</div>
+                    <h2 class="regional-title">Brittany</h2>
+                    <p class="regional-desc">La culture alimentaire régionale de la Bretagne
+La Bretagne, située dans le nord-ouest de la France, est connue pour sa cuisine riche, généreuse et influencée par la mer, façonnée par son littoral atlantique accidenté et son climat plus frais. Contrairement aux régions du sud comme la Provence, la Bretagne utilise davantage le beurre que l’huile d’olive, ce qui donne à ses plats une saveur plus riche et plus gourmande. L’agriculture et l’environnement maritime de la région influencent fortement les ingrédients utilisés, notamment les produits laitiers, les fruits de mer, le sarrasin et les pommes.
+Les fruits de mer jouent un rôle central dans la cuisine bretonne en raison de son long littoral le long de l’océan Atlantique. Les huîtres fraîches, les moules, les coquilles Saint-Jacques et le poisson sont largement consommés, souvent préparés de manière simple pour mettre en valeur leur goût naturel. Des plats comme les plateaux de fruits de mer et les ragoûts de poisson reflètent le lien profond de la région avec la mer et ses traditions de pêche.
+L’une des caractéristiques les plus emblématiques de la culture culinaire bretonne est l’utilisation du sarrasin, notamment dans les crêpes salées appelées galettes. Celles-ci sont généralement garnies d’ingrédients tels que le fromage, le jambon, les œufs ou les fruits de mer. Les crêpes sucrées, préparées à partir de farine de blé, sont également très populaires et sont souvent servies avec du sucre, du chocolat ou des fruits. Ces plats font partie intégrante de la vie quotidienne et de l’identité culinaire de la région.
+Les produits laitiers sont particulièrement importants en Bretagne, le beurre étant un ingrédient essentiel. Le beurre breton, souvent salé, est utilisé généreusement en cuisine et en pâtisserie, contribuant à la richesse des saveurs des plats et des desserts.
+Des pâtisseries célèbres comme le kouign-amann — une pâtisserie au beurre caramélisée — mettent en valeur l’amour de la région pour les saveurs riches et gourmandes.
+Les pommes constituent un autre élément important de la culture alimentaire bretonne, principalement utilisées pour produire du cidre. Le cidre breton est traditionnellement servi avec les repas, notamment avec les crêpes et les galettes, et représente un symbole de fierté régionale.
+Les marchés locaux en Bretagne, comme dans d’autres régions françaises, jouent un rôle essentiel dans la vie quotidienne. Les habitants y achètent des fruits de mer frais, des légumes, des produits laitiers et des produits de boulangerie directement auprès des producteurs. Ces marchés mettent l’accent sur la fraîcheur, l’approvisionnement local et les interactions communautaires, renforçant ainsi le lien entre la nourriture et la vie quotidienne.
+La cuisine bretonne est également profondément liée à ses traditions rurales et à son patrimoine culturel. Les communautés agricoles et de pêche jouent un rôle essentiel dans la préservation de l’authenticité de la culture culinaire bretonne.
+La philosophie culinaire en Bretagne met l’accent sur la simplicité et la qualité, comme dans d’autres cuisines régionales françaises. Cependant, elle privilégie la richesse et le côté réconfortant plutôt que la légèreté, avec moins d’herbes et une plus grande utilisation du beurre, de la crème et des saveurs naturelles des ingrédients principaux.
+La culture culinaire bretonne contribue également au tourisme et à la reconnaissance gastronomique mondiale. Les visiteurs sont attirés par la région pour sa cuisine côtière, ses crêperies traditionnelles et ses produits artisanaux. Les plats bretons, en particulier les crêpes et les pâtisseries, ont acquis une popularité internationale, faisant de la région une partie importante du paysage culinaire diversifié de la France.
+Dans l’ensemble, la culture alimentaire de la Bretagne représente un mélange unique d’influences maritimes, de traditions agricoles et d’un riche patrimoine culinaire.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="interval"> 
+        <div class="containerreg"> 
+        <div class="interval-content"> 
+            <h2 class="interval-title">Le caractère unique de la Bretagne</h2> 
+            <p class="interval-desc"> <b>• Importance des fruits de mer</b><br>
+                La Bretagne, étant une région côtière, possède une cuisine fortement centrée sur les fruits de mer frais. Le poisson, les huîtres, les moules et les crabes sont des aliments de base, reflétant le lien étroit de la région avec la mer et ses traditions maritimes.<br> 
+                <b>• Crêpes et galettes de sarrasin</b><br>
+                La Bretagne est célèbre pour ses crêpes (sucrées) et ses galettes (crêpes salées à base de sarrasin). Ces plats sont typiques de la région et sont souvent accompagnés d’ingrédients locaux tels que le fromage, le jambon ou les pommes. </p> 
+            </div> 
+        </div> 
+    </section>
+    <section class="regional" id="Normandy">
+        <div class="containerreg">
+            <div class="content-row">
+                <div class="regional-header">
+                    <div class="regional-subtitle">La région normande de la France</div>
+                    <h2 class="regional-title">Normandy</h2>
+                    <p class="regional-desc">La Normandie, située dans le nord de la France, possède une culture culinaire riche et traditionnelle, façonnée par son climat frais, ses sols fertiles et son long littoral. La région est particulièrement célèbre pour son élevage laitier, produisant du beurre de haute qualité, de la crème fraîche et des fromages bien connus tels que le Camembert, le Livarot et le Pont-l’Évêque. Ces ingrédients sont largement utilisés en cuisine, donnant aux plats normands leur texture crémeuse et leur saveur caractéristique.
+Les pommes occupent une place centrale dans la cuisine normande. La région possède de nombreux vergers, et les pommes sont utilisées pour produire du cidre et du Calvados (eau-de-vie de pomme). Elles sont également ajoutées à des plats sucrés comme salés, notamment avec des viandes comme le porc et le poulet. Un exemple classique est le Poulet Vallée d’Auge, un plat préparé avec des pommes, de la crème et du cidre.
+Grâce à sa situation côtière, la Normandie est également riche en fruits de mer, notamment les huîtres, les moules, les coquilles Saint-Jacques et le poisson frais. Des plats populaires comme les moules marinières mettent en valeur le lien étroit de la région avec la mer.
+La Normandie est aussi connue pour ses desserts traditionnels, tels que la tarte normande (tarte aux pommes), qui associe des pommes locales à de la crème et des œufs. Les repas suivent souvent une structure française traditionnelle, mettant l’accent sur des ingrédients frais et locaux ainsi que sur des méthodes de préparation simples.
+
+Overall, the food culture of Normandy reflects a strong connection to agriculture, orchards, and the sea, making it hearty, flavorful, and deeply rooted in regional traditions. 🍎🧀
+
+Another important aspect of Normandy’s food culture is its strong connection to rural life and local farming traditions. Many ingredients are sourced directly from nearby farms, and there is a focus on freshness and seasonal produce. Markets play a key role in everyday life, where people buy cheese, seafood, fruits, and vegetables. This farm-to-table approach helps preserve authentic flavors and supports local communities.
+
+Additionally, food in Normandy is closely linked to social and cultural practices. Meals are often enjoyed slowly with family and friends, highlighting the importance of togetherness in French culture. Traditional recipes are passed down through generations, keeping culinary heritage alive. Festivals and local events also celebrate regional foods like cheese and cider, showing how deeply cuisine is connected to Normandy’s identity and way of life.
+
+                    </p>
+                </div>
+                <div class="polaroid-gallery">
+                    <div class="pin"><img src="photos/normandy2.png"></div>
+                    <div class="pin"><img src="photos/normandy11.png"></div>
+                    <div class="pin"><img src="photos/normandy4.png"></div>
+                    <div class="pin"><img src="photos/normandy5.png"></div>
+                    <div class="pin"><img src="photos/normandy6.png"></div>
+                    <div class="pin"><img src="photos/normandy7.png"></div>
+                    <div class="pin"><img src="photos/normandy12.png"></div>
+                    <div class="pin"><img src="photos/normandy9.png"></div>
+                    <div class="pin"><img src="photos/normandy13.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="interval"> 
+        <div class="containerreg"> 
+        <div class="interval-content"> 
+            <h2 class="interval-title">Le caractère unique de la Normandie</h2> 
+            <p class="interval-desc"> <b>• Utilisation importante de produits laitiers</b><br>
+                La Normandie est célèbre pour son élevage laitier riche, c’est pourquoi sa cuisine utilise abondamment le beurre, la crème et le fromage. Contrairement au sud de la France (qui privilégie l’huile d’olive), la cuisine normande repose principalement sur le beurre comme ingrédient de base<br> 
+                <b>• Cuisine et boissons à base de pommes</b><br>
+                La Normandie est connue comme la capitale de la pomme en France, et les pommes jouent un rôle central dans sa culture alimentaire. Elles sont utilisées dans des plats sucrés comme salés, tels que les tartes et les préparations à base de viande. </p> 
+            </div> 
+        </div> 
+    </section>
+    <section class="regional1" id="Provence">
+        <div class="containerreg">
+            <div class="content-row">
+                <div class="polaroid-gallery">
+                    <div class="pin"><img src="photos/provence2.jpeg"></div>
+                    <div class="pin"><img src="photos/provence6.png"></div>
+                    <div class="pin"><img src="photos/provence3.jpeg"></div>
+                    <div class="pin"><img src="photos/provence8.png"></div>
+                    <div class="pin"><img src="photos/provence9.png"></div>
+                    <div class="pin"><img src="photos/provence4.jpeg"></div>
+                    <div class="pin"><img src="photos/provence10.png"></div>
+                    <div class="pin"><img src="photos/provence11.png"></div>
+                    <div class="pin"><img src="photos/provence12.png"></div>
+                </div>
+                <div class="regional-header">
+                    <div class="regional-subtitle">La région provençale de la France</div>
+                    <h2 class="regional-title">Provence</h2>
+                    <p class="regional-desc">La Provence, située dans le sud de la France, est connue pour sa cuisine fraîche, colorée et de style méditerranéen. Le climat chaud permet la culture d’ingrédients tels que l’huile d’olive, les tomates, l’ail, les courgettes, les aubergines et des herbes aromatiques comme le thym, le romarin et le basilic. Contrairement aux régions du nord de la France, la cuisine provençale utilise l’huile d’olive plutôt que le beurre et privilégie des techniques simples qui mettent en valeur les saveurs naturelles.
+
+Les fruits de mer jouent un rôle important en raison du littoral méditerranéen. Des plats célèbres comme la bouillabaisse (soupe de poisson) mettent en valeur l’utilisation de poisson frais et d’herbes, tandis que des plats à base de légumes comme la ratatouille reflètent l’importance accordée aux produits de saison dans la région. La cuisine est généralement plus légère et plus saine, influencée par le régime méditerranéen, avec une préférence pour les aliments grillés, rôtis et frais.
+La Provence possède également une forte tradition de marchés locaux, où les habitants achètent des fruits, des légumes, des olives, des fromages et des herbes fraîches. Ces marchés sont au cœur de la vie quotidienne et reflètent le mode de vie communautaire de la région. La nourriture est étroitement liée à la nature, et les repas changent souvent selon les saisons afin de garantir fraîcheur et qualité.
+De plus, la cuisine provençale montre des influences de pays voisins comme l’Italie et l’Espagne, notamment dans l’utilisation de l’huile d’olive, de l’ail et des fruits de mer. Les desserts incluent souvent des ingrédients locaux tels que les fruits, les amandes et le miel, comme dans les tartes aux fruits et le nougat.
+Un autre aspect important de la culture alimentaire de la Provence est son lien étroit avec les traditions rurales et l’agriculture. De nombreuses recettes ont été transmises de génération en génération, et les ingrédients proviennent souvent directement des fermes locales, des oliveraies et des vignobles. Des produits comme l’huile d’olive et le vin sont des symboles importants de l’identité et de la fierté régionales.
+La nourriture en Provence est également étroitement liée à la vie sociale et à la vie en plein air. Les repas sont souvent pris à l’extérieur, surtout par temps chaud, réunissant les gens dans une ambiance détendue. Les festivals et événements locaux célèbrent les spécialités régionales, montrant à quel point la cuisine est profondément liée à la culture et au mode de vie provençaux.
+La Provence est aussi connue pour sa philosophie culinaire simple, où les plats ne sont pas trop complexes mais se concentrent sur l’équilibre des saveurs et l’utilisation d’ingrédients frais. Cette approche reflète l’idée qu’une bonne cuisine n’a pas besoin d’être élaborée, mais doit mettre en valeur la qualité des produits locaux.
+Enfin, la culture alimentaire de la Provence joue un rôle important dans le tourisme et l’influence mondiale. De nombreuses personnes visitent la région pour découvrir sa cuisine, ses marchés et ses vignobles. La cuisine provençale a également influencé la cuisine internationale, notamment grâce à la popularité du régime méditerranéen, ce qui en fait une partie importante de l’identité culinaire mondiale de la France.
+
+
+Une autre caractéristique notable est l’utilisation d’ingrédients aromatiques et d’assaisonnements naturels. Au lieu de sauces lourdes, la cuisine provençale s’appuie sur les herbes, l’huile d’olive, l’ail et les épices pour créer des saveurs. Cela rend les plats non seulement savoureux, mais aussi plus sains et plus proches d’une cuisine naturelle.
+Dans l’ensemble, la culture culinaire de la Provence représente un mélange parfait de santé, de tradition, d’environnement et de communauté, ce qui en fait l’une des cuisines régionales les plus distinctives et les plus célébrées de la France. 🍅🌿
+.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="interval"> 
+        <div class="containerreg"> 
+        <div class="interval-content"> 
+            <h2 class="interval-title">Le caractère unique de la Provence</h2> 
+            <p class="interval-desc"> <b>• Saveurs méditerranéennes et utilisation de l’huile d’olive</b><br>
+                La cuisine provençale se définit par l’utilisation de légumes frais, d’herbes et d’une grande quantité d’huile d’olive à la place du beurre. Les plats mettent souvent en valeur des ingrédients comme les tomates, l’ail, les courgettes et les aubergines, créant des saveurs vives et aromatiques typiques de la Méditerranée.<br> 
+                <b>• Utilisation d’herbes et d’aromates (Herbes de Provence)</b><br>
+                Une caractéristique distinctive de la cuisine provençale est son utilisation d’herbes aromatiques telles que le romarin, le thym, le basilic et l’origan, souvent mélangées sous le nom d’« herbes de Provence.</p> 
+            </div> 
+        </div> 
+    </section>
+    <section class="regional" id="Lyon">
+        <div class="containerreg">
+            <div class="content-row">
+                <div class="regional-header">
+                    <div class="regional-subtitle">La région germanique de la France</div>
+                    <h2 class="regional-title">Lyon</h2>
+                    <p class="regional-desc">Lyon, située dans le centre-est de la France, est largement reconnue comme la capitale gastronomique du pays. Sa culture culinaire est profondément enracinée dans l’histoire, les traditions locales et sa position géographique entre le nord et le sud de la France. Grâce à cette localisation, la cuisine lyonnaise combine des influences diverses, tout en conservant une identité forte basée sur des plats riches, simples et savoureux.
+L’un des aspects les plus importants de la cuisine lyonnaise est son attachement aux produits locaux et de qualité. La région bénéficie de l’accès à des ingrédients variés provenant des fermes environnantes, notamment de la volaille, de la viande, des légumes frais et des produits laitiers. Les marchés locaux jouent un rôle essentiel dans la vie quotidienne, où les habitants achètent des produits frais pour préparer des repas traditionnels.
+La cuisine lyonnaise est particulièrement célèbre pour ses plats à base de viande et de spécialités charcutières. Des plats emblématiques comme la quenelle, le saucisson lyonnais et la salade lyonnaise illustrent parfaitement la richesse et la simplicité de cette cuisine. Ces plats sont souvent préparés avec des techniques traditionnelles qui mettent en valeur les saveurs naturelles des ingrédients.
+Un élément central de la culture alimentaire de Lyon est le concept des “bouchons lyonnais”. Ce sont des restaurants traditionnels où l’on sert des plats typiques dans une ambiance conviviale et authentique. Les repas dans ces établissements sont souvent copieux et reflètent l’importance de la convivialité et du partage dans la culture lyonnaise.
+Les desserts occupent également une place importante dans la gastronomie de Lyon. La région est connue pour ses pâtisseries et ses douceurs, notamment à base de chocolat et de fruits. De plus, Lyon possède une forte tradition liée aux chefs et à la haute cuisine, ayant contribué au développement de la gastronomie française moderne.
+Un autre aspect important de la culture culinaire lyonnaise est son lien étroit avec les traditions sociales et familiales. Les repas sont souvent des moments de rassemblement, où la nourriture est partagée dans une atmosphère chaleureuse. Les recettes sont transmises de génération en génération, ce qui permet de préserver l’authenticité et l’identité de la cuisine locale.
+Dans l’ensemble, la culture alimentaire de Lyon représente un équilibre parfait entre tradition, qualité des ingrédients et richesse des saveurs. Elle reflète non seulement l’histoire et la géographie de la région, mais aussi l’importance de la gastronomie dans la vie quotidienne des habitants.
+                    </p>
+                </div>
+                <div class="polaroid-gallery">
+                    <div class="pin"><img src="photos/lyon10.png"></div>
+                    <div class="pin"><img src="photos/lyon1.png"></div>
+                    <div class="pin"><img src="photos/lyon3.png"></div>
+                    <div class="pin"><img src="photos/lyon4.png"></div>
+                    <div class="pin"><img src="photos/lyon5.png"></div>
+                    <div class="pin"><img src="photos/lyon6.png"></div>
+                    <div class="pin"><img src="photos/lyon13.png"></div>
+                    <div class="pin"><img src="photos/lyon8.png"></div>
+                    <div class="pin"><img src="photos/lyon13.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="interval"> 
+        <div class="containerreg"> 
+        <div class="interval-content"> 
+            <h2 class="interval-title">Le caractère unique de Lyon</h2> 
+            <p class="interval-desc"> <b>• Capitale gastronomique de la France</b><br>
+                Lyon est considérée comme le cœur de la gastronomie française, avec une forte influence sur la cuisine nationale et internationale grâce à ses chefs et ses traditions culinaires. <br> 
+                <b>• Les bouchons lyonnais</b><br>
+                Les bouchons sont des restaurants traditionnels uniques à Lyon, offrant une cuisine authentique dans une ambiance conviviale, mettant l’accent sur des plats simples et riches.</p> 
+            </div> 
+        </div> 
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About The Team</h3>
+                    <p style="color: var(--coffee-accent); margin-bottom: 20px;">Palak Wahal (RA2511050010016)<br> Adarsh V Nair (RA2511051010007) <br> Deva Darshan (RA2511051010017) <br> Matthew Simion (RA2511051010016) <br> Aarav Chandwaney (RA251051010010) <br> Faculty: Ms. A Manju Rekha</p>
+        
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://youtu.be/8xNMVqg44ts?si=_R0M9P1I042-WZfx" target="_blank">French Instrumental Music</a></li>
+                        <li><a href="https://youtu.be/kAVZ5jB0LeA?si=IBh0xxABHd6I-O0W" target="_blank">More about the history of French cuisine</a></li>
+                        <li><a href="https://www.thefrenchcookingacademy.com/recipes" target="_blank">French Recipes</a></li>
+                        <li><a href="https://www.verygourmand.com/gb/blog/detail/gastronomia-francesa-por-que-essa-paixao/?srsltid=AfmBOopiI12Px88NFzaXpUn_ydEj8nsp8nZPpGiXsIeAXJqqMaEa7BrI" target="_blank">What makes French cuisine unique?</a></li>
+                    </ul>
+                </div>
+                
+
+            </div>
+            
+            <div class="copyright">
+                © 2026 Palak Wahal
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
